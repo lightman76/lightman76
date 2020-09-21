@@ -1,3 +1,6 @@
+body {
+  font-size: 18px;
+}
 .state-bird__need-crop {
   object-fit: cover;
   width: 200px;
