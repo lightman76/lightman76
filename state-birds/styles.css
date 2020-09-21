@@ -1,0 +1,29 @@
+.state-bird__need-crop {
+  object-fit: cover;
+  width: 200px;
+  height: 255px;
+  object-position: 0 -35px;
+}
+
+.quiz-section {
+  margin-top: 50px;
+}
+.next-button-row {
+  margin-top: 15px;
+}
+.review-answer-row {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #999;
+}
+.review-answer-header {
+  border-bottom: 1px solid #666;
+  padding-bottom: 7px;
+}
+.review-answer-header-col {
+  font-weight: bold;
+}
+.review-perfect {
+  font-weight: bold;
+  font-size: 25px;
+}

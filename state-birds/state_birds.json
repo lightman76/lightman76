@@ -1,0 +1,302 @@
+[
+  {
+    "state":"Alabama",
+    "bird":"Yellowhammer",
+    "flower":"Camellia",
+    "path":"Alabama.png"
+  },
+  {
+    "state":"Alaska",
+    "bird":"Willow Ptarmigan",
+    "flower":"Forget-Me-Not",
+    "path":"Alaska.png"
+  },
+  {
+    "state":"Arizona",
+    "bird":"Cactus Wren",
+    "flower":"Saguaro Cactus Blossom",
+    "path":"Arizona.png"
+  },
+  {
+    "state":"Arkansas",
+    "bird":"Mockingbird",
+    "flower":"Apple Blossom",
+    "path":"Arkansas.png"
+  },
+  {
+    "state":"California",
+    "bird":"California Quail",
+    "flower":"California Poppy",
+    "path":"California.png"
+  },
+  {
+    "state":"Colorado",
+    "bird":"Lark Bunting",
+    "flower":"Rocky Mountain Columbine",
+    "path":"Colorado.png"
+  },
+  {
+    "state":"Connecticut",
+    "bird":"Robin",
+    "flower":"Mountain Laurel",
+    "path":"Connecticut.png"
+  },
+  {
+    "state":"Delaware",
+    "bird":"Blue Hen Chicken",
+    "flower":"Peach Blossom",
+    "path":"Delaware.png"
+  },
+  {
+    "state":"Florida",
+    "bird":"Mockingbird",
+    "flower":"Orange Blossom",
+    "path":"Florida.png"
+  },
+  {
+    "state":"Georgia",
+    "bird":"Brown Thrasher",
+    "flower":"Cherokee Rose",
+    "path":"Georgia.png"
+  },
+  {
+    "state":"Hawaii",
+    "bird":"Hawaiian Goose",
+    "flower":"Hibiscus",
+    "path":"Hawaii.png"
+  },
+  {
+    "state":"Idaho",
+    "bird":"Mountain Bluebird",
+    "flower":"Syringa",
+    "path":"Idaho.png"
+  },
+  {
+    "state":"Illinois",
+    "bird":"Cardinal",
+    "flower":"Violet",
+    "path":"Illinois.png"
+  },
+  {
+    "state":"Indiana",
+    "bird":"Cardinal",
+    "flower":"Peony",
+    "path":"Indiana.png"
+  },
+  {
+    "state":"Iowa",
+    "bird":"Eastern Goldfinch",
+    "flower":"Wild Rose",
+    "path":"Iowa.png"
+  },
+  {
+    "state":"Kansas",
+    "bird":"Western Meadowlark",
+    "flower":"Sunflower",
+    "path":"Kansas.png"
+  },
+  {
+    "state":"Kentucky",
+    "bird":"Cardinal",
+    "flower":"Goldenrod",
+    "path":"Kentucky.png"
+  },
+  {
+    "state":"Louisiana",
+    "bird":"Brown Pelican",
+    "flower":"Magnolia",
+    "path":"Louisiana.png"
+  },
+  {
+    "state":"Maine",
+    "bird":"Chickadee",
+    "flower":"White Pine Cone and Tassel",
+    "path":"Maine.png"
+  },
+  {
+    "state":"Maryland",
+    "bird":"Baltimore Oriole",
+    "flower":"Black-Eyed Susan",
+    "path":"Maryland.png"
+  },
+  {
+    "state":"Massachusetts",
+    "bird":"Black-Capped Chickadee",
+    "flower":"Mayflower",
+    "path":"Massachusetts.png"
+  },
+  {
+    "state":"Michigan",
+    "bird":"Robin",
+    "flower":"Apple Blossom",
+    "path":"Michigan.png"
+  },
+  {
+    "state":"Minnesota",
+    "bird":"Common Loon",
+    "flower":"Showy Lady Slipper",
+    "path":"Minnesota.png"
+  },
+  {
+    "state":"Mississippi",
+    "bird":"Mockingbird",
+    "flower":"Magnolia",
+    "path":"Mississippi.png"
+  },
+  {
+    "state":"Missouri",
+    "bird":"Eastern Bluebird",
+    "flower":"Red Hawthorn",
+    "path":"Missouri.png"
+  },
+  {
+    "state":"Montana",
+    "bird":"Western Meadowlark",
+    "flower":"Bitteroot",
+    "path":"Montana.png"
+  },
+  {
+    "state":"Nebraska",
+    "bird":"Western Meadowlark",
+    "flower":"Goldenrod",
+    "path":"Nebraska.png"
+  },
+  {
+    "state":"Nevada",
+    "bird":"Mountain Bluebird",
+    "flower":"Sagebrush",
+    "path":"Nevada.png"
+  },
+  {
+    "state":"New Hampshire",
+    "bird":"Purple Finch",
+    "flower":"Lilac",
+    "path":"NewHampshire.png"
+  },
+  {
+    "state":"New Jersey",
+    "bird":"American Goldfinch",
+    "flower":"Violet",
+    "path":"NewJersey.png"
+  },
+  {
+    "state":"New Mexico",
+    "bird":"Roadrunner",
+    "flower":"Yucca Flower",
+    "path":"NewMexico.png"
+  },
+  {
+    "state":"New York",
+    "bird":"Eastern Bluebird",
+    "flower":"Rose",
+    "path":"NewYork.png"
+  },
+  {
+    "state":"North Carolina",
+    "bird":"Cardinal",
+    "flower":"Flowering Dogwood",
+    "path":"NorthCarolina.png"
+  },
+  {
+    "state":"North Dakota",
+    "bird":"Western Meadowlark",
+    "flower":"Wild Prairie Rose",
+    "path":"NorthDakota.png"
+  },
+  {
+    "state":"Ohio",
+    "bird":"Cardinal",
+    "flower":"Red Carnation",
+    "path":"Ohio.png"
+  },
+  {
+    "state":"Oklahoma",
+    "bird":"Scissor-Tailed Flycatcher",
+    "flower":"Oklahoma Rose",
+    "path":"Oklahoma.png"
+  },
+  {
+    "state":"Oregon",
+    "bird":"Western Meadowlark",
+    "flower":"Oregon Grape",
+    "path":"Oregon.png"
+  },
+  {
+    "state":"Pennsylvania",
+    "bird":"Ruffed Grouse",
+    "flower":"Mountain Laurel",
+    "path":"Pennsylvania.png"
+  },
+  {
+    "state":"Rhode Island",
+    "bird":"Rhode Island Red",
+    "flower":"Violet",
+    "path":"RhodeIsland.png"
+  },
+  {
+    "state":"South Carolina",
+    "bird":"Carolina Wren",
+    "flower":"Carolina Jessamine",
+    "path":"SouthCarolina.png"
+  },
+  {
+    "state":"South Dakota",
+    "bird":"Ring-Necked Pheasant",
+    "flower":"Pasqueflower",
+    "path":"SouthDakota.png"
+  },
+  {
+    "state":"Tennessee",
+    "bird":"Mockingbird",
+    "flower":"Iris",
+    "path":"Tennessee.png"
+  },
+  {
+    "state":"Texas",
+    "bird":"Mockingbird",
+    "flower":"Bluebonnet",
+    "path":"Texas.png"
+  },
+  {
+    "state":"Utah",
+    "bird":"California Gull",
+    "flower":"Sego Lily",
+    "path":"Utah.png"
+  },
+  {
+    "state":"Vermont",
+    "bird":"Hermit Thrush",
+    "flower":"Red Clover",
+    "path":"Vermont.png"
+  },
+  {
+    "state":"Virginia",
+    "bird":"Cardinal",
+    "flower":"Flowering Dogwood",
+    "path":"Virginia.png"
+  },
+  {
+    "state":"Washington",
+    "bird":"American Goldfinch",
+    "flower":"Rhododendron",
+    "path":"Washington.png"
+  },
+  {
+    "state":"West Virginia",
+    "bird":"Cardinal",
+    "flower":"Rhododendron Maximum",
+    "path":"WestVirginia.png"
+  },
+  {
+    "state":"Wisconsin",
+    "bird":"Robin",
+    "flower":"Wood Violet",
+    "path":"Wisconsin.png"
+  },
+  {
+    "state":"Wyoming",
+    "bird":"Western Meadowlark",
+    "flower":"Indian Paintbrush",
+    "path":"Wyoming.png"
+  }
+]
