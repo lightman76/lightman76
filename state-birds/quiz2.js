@@ -1,12 +1,13 @@
-lightman76.Quiz1 = function(data, quizHelper) {
+lightman76.Quiz2 = function(data, quizHelper) {
   var vm = this;
 
   function createUniqueBirdList() {
     var birds = {};
     data.forEach(function(state){
-      birds[state.bird] = true;
+      birds[state.bird] = state.path;
     });
     vm.birdList = Object.keys(birds);
+    vm.birdToPic = birds;
   }
 
   vm.answerSelected = function(evt) {
@@ -17,21 +18,21 @@ lightman76.Quiz1 = function(data, quizHelper) {
   vm.rerenderQuestion = function() {
     console.log("Rerender question")
     $(".nextButton").attr("disabled","disabled");
-    if(vm.questionIdx < vm.stateList.length) {
-      $(".quiz-progress").html((vm.questionIdx+1)+" of "+vm.stateList.length);
-      var curState = vm.stateList[vm.questionIdx];
-      console.log("  State="+curState.state);
-      $(".question-container").html("What is the state bird of "+curState.state);
+    if(vm.questionIdx < vm.birdList.length) {
+      $(".quiz-progress").html((vm.questionIdx+1)+" of "+vm.birdList.length);
+      var curBirdName = vm.birdList[vm.questionIdx];
+      console.log("  Bird="+curBirdName);
+      $(".question-container").html("What is this bird: <img src='"+vm.birdToPic[curBirdName]+"' class='state-bird__need-crop'>");
 
       var randomBirdList = lightman76.util.shuffleArray(vm.birdList.slice());
       var options = [];
 
       for(var i = 0; options.length < 5 && i < randomBirdList.length; i++) {
-        if(curState.bird !== randomBirdList[i]) {
+        if(curBirdName !== randomBirdList[i]) {
           options.push(randomBirdList[i]);
         }
       }
-      options.push(curState.bird);
+      options.push(curBirdName);
       //Don't want the answer to always be last, so shuffle
       lightman76.util.shuffleArray(options);
       //now render radio buttons for this
@@ -49,14 +50,14 @@ lightman76.Quiz1 = function(data, quizHelper) {
   function checkAnswer() {
     var radioValue = $("input[name='answerChoice']:checked").val();
     if(radioValue) {
-      var curState = vm.stateList[vm.questionIdx];
-      if(radioValue === curState.bird) {
+      var curBirdName = vm.birdList[vm.questionIdx];
+      if(radioValue === curBirdName) {
         vm.numCorrect++;
-        vm.correctQuestions.push(curState);
+        vm.correctQuestions.push(curBirdName);
         console.log("Answered correctly "+radioValue)
       } else {
-        vm.incorrectQuestions.push({stateInfo: curState, answer: radioValue});
-        console.log("Answered incorrectly "+curState.bird +" not "+ radioValue)
+        vm.incorrectQuestions.push({birdName: curBirdName, answer: radioValue});
+        console.log("Answered incorrectly - it's "+curBirdName +" not "+ radioValue)
       }
       return true;
     } else {
@@ -66,22 +67,22 @@ lightman76.Quiz1 = function(data, quizHelper) {
 
   vm.showFinalScores = function() {
     var html = "";
-    html+= "<h3>"+vm.numCorrect+" out of "+vm.stateList.length+" Correct</h3>\n";
-    if(vm.numCorrect != vm.stateList.length) {
+    html+= "<h3>"+vm.numCorrect+" out of "+vm.birdList.length+" Correct</h3>\n";
+    if(vm.numCorrect != vm.birdList.length) {
       html+= "<div class='panel panel-default'>\n"
       html+= "  <div class='panel-heading'>\n"
       html+= "    <div class='panel-title'>Here's the questions you missed</div>\n";
       html+= "  </div>\n";
       html+= "  <div class='panel-body'>\n";
       html+="<div class='row review-answer-header'>"
-      html+="  <div class='col-xs-12 col-sm-4 review-answer-header-col'>State</div>"
+      html+="  <div class='col-xs-12 col-sm-4 review-answer-header-col'>Bird Picture</div>"
       html+="  <div class='col-xs-12 col-sm-4 review-answer-header-col'>Correct</div>"
       html+="  <div class='col-xs-12 col-sm-4 review-answer-header-col'>You choose</div>"
       html+="</div>"
       vm.incorrectQuestions.forEach(function(info){
         html+="<div class='row review-answer-row'>"
-        html+="  <div class='col-xs-12 col-sm-4'>"+info.stateInfo.state+"</div>"
-        html+="  <div class='col-xs-12 col-sm-4'>"+info.stateInfo.bird+"</div>"
+        html+="  <div class='col-xs-12 col-sm-4'><img src='"+vm.birdToPic[info.birdName]+"'></div>"
+        html+="  <div class='col-xs-12 col-sm-4'>"+info.birdName+"</div>"
         html+="  <div class='col-xs-12 col-sm-4'>"+info.answer+"</div>"
         html+="</div>"
       });
@@ -106,7 +107,7 @@ lightman76.Quiz1 = function(data, quizHelper) {
     }
     if(checkAnswer()) {
       vm.questionIdx++;
-      if(vm.questionIdx < vm.stateList.length) {
+      if(vm.questionIdx < vm.birdList.length) {
         vm.rerenderQuestion();
       } else {
         vm.showFinalScores();
@@ -125,7 +126,7 @@ lightman76.Quiz1 = function(data, quizHelper) {
 
   vm.initialize = function() {
     createUniqueBirdList();
-    vm.stateList = lightman76.util.shuffleArray(data.slice());
+    vm.birdNames = lightman76.util.shuffleArray(vm.birdList.slice());
     vm.questionIdx = 0;
     vm.correctQuestions = [];
     vm.incorrectQuestions = [];

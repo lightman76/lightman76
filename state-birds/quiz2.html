@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>State Bird Quiz 1</title>
+  <title>State Bird Quiz 2</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
@@ -17,11 +17,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
   <script src="quiz-bootstrap.js"></script>
-  <script src="quiz1.js"></script>
+  <script src="quiz2.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>State Bird Quiz 1</h1>
+    <h1>State Bird Quiz 2</h1>
     <div class="quiz-section">
       <div class="row">
         <div class="col-xs-12 center-block">
@@ -54,7 +54,7 @@
     var quizSetup = new lightman76.QuizHelper("./state_birds.json", "./images/");
     var el = $(".bird-list");
     quizSetup.loadJsonDataFile("./state_birds.json").then(function(data){
-      var quiz = new lightman76.Quiz1(data, quizSetup);
+      var quiz = new lightman76.Quiz2(data, quizSetup);
     });
   </script>
 
