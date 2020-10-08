@@ -66,6 +66,7 @@ lightman76.Quiz2 = function(data, quizHelper) {
   }
 
   vm.showFinalScores = function() {
+    window.quizCompleted = true;
     var html = "";
     html+= "<h3>"+vm.numCorrect+" out of "+vm.birdList.length+" Correct</h3>\n";
     if(vm.numCorrect != vm.birdList.length) {

@@ -46,3 +46,10 @@ lightman76.util.shuffleArray = function(arr) {
   }
   return arr;
 }
+
+window.onbeforeunload = function(evt) {
+  if(!window.quizCompleted) {
+    evt.preventDefault();
+    evt.returnValue = '\o/';
+  }
+}
