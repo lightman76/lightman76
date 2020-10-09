@@ -127,7 +127,7 @@ lightman76.Quiz3 = function(data, quizHelper) {
 
   vm.initialize = function() {
     createUniqueFlowerList();
-    vm.flowerNames = lightman76.util.shuffleArray(vm.flowerList.slice());
+    vm.flowerList = lightman76.util.shuffleArray(vm.flowerList.slice());
     vm.questionIdx = 0;
     vm.correctQuestions = [];
     vm.incorrectQuestions = [];
