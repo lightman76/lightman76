@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz 4 - State Flower </title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  <script src="quiz-bootstrap.js"></script>
+  <script src="quiz4.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Quiz 4 - State Flowers </h1>
+  <div class="quiz-section">
+    <div class="row">
+      <div class="col-xs-12 center-block">
+        <div class="quiz-progress"></div>
+      </div>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 question-container">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 answer-choices-container">
+
+        </div>
+      </div>
+      <div class="row next-button-row">
+        <div class="col-xs-12 col-sm-6"></div>
+        <div class="col-xs-12 col-sm-6">
+          <button class="btn btn-primary nextButton" disabled="true">Next</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="results-section hidden">
+
+  </div>
+</div>
+
+<script>
+  var quizSetup = new lightman76.QuizHelper("./state_birds.json", "./images/");
+  var el = $(".bird-list");
+  quizSetup.loadJsonDataFile("./state_birds.json").then(function(data){
+    var quiz = new lightman76.Quiz4(data, quizSetup);
+  });
+</script>
+
+</body>
+</html>
